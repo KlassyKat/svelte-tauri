@@ -15,17 +15,14 @@
 		max-width: 240px;
 		margin: 0 auto;
 	}
-
 	h1 {
 		text-transform: uppercase;
 		font-size: 4em;
 	}
-
 	#svelte {
 		color: #ff3e00;
 		font-weight: 100;
 	}
-
 	#tauri {
 		color: #57ADBF;
 	}
