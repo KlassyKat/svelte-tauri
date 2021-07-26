@@ -1,26 +1,23 @@
 [package]
 name = "svelte-tauri"
 version = "0.1.0"
-description = "Svelte Template Tauri"
-authors = [ "Klassy Kat" ]
+description = "A Tauri App"
+authors = ["Klassy Kat"]
 license = ""
 repository = ""
-default-run = "tauri-test"
 edition = "2018"
 build = "src/build.rs"
 
-[dependencies]
-serde_json = "1.0"
-serde = { version = "1.0", features = [ "derive" ] }
-tauri = { version = "^1.0.0-beta.2", features = ["api-all"] }
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "1.0.0-beta.0" }
+tauri-build = { version = "1.0.0-beta.3" }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.0.0-beta.5" }
 
 [features]
-custom-protocol = [ "tauri/custom-protocol" ]
 default = [ "custom-protocol" ]
-
-[[bin]]
-name = "tauri-test"
-path = "src/main.rs"
+custom-protocol = [ "tauri/custom-protocol" ]
