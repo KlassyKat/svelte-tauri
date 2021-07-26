@@ -43,4 +43,4 @@ The main culprits of breaking changes are
 `main.rs`
 `build.rs`
 
-I welcome pul requests updating :smile:
+I welcome pull requests updating :smile:
